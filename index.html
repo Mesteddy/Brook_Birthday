@@ -1,192 +1,218 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>🎉 It's My Birthday!</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap');
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎉 It's My Birthday!</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap");
 
-    body {
-      background: linear-gradient(135deg, #a2d2ff, #caffbf); /* Blue-green background */
-      font-family: 'Roboto', sans-serif;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-    }
+      body {
+        background: linear-gradient(
+          135deg,
+          #a2d2ff,
+          #caffbf
+        ); /* Blue-green background */
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
 
-    h1 {
-      font-family: 'Pacifico', cursive;
-      font-size: 3.5em;
-      color: #0077b6; /* Dark blue */
-      margin-top: 50px;
-      text-shadow: 2px 2px #fff;
-    }
+      h1 {
+        font-family: "Pacifico", cursive;
+        font-size: 3.5em;
+        color: #0077b6; /* Dark blue */
+        margin-top: 50px;
+        text-shadow: 2px 2px #fff;
+      }
 
-    h2 {
-      font-size: 2em;
-      color: #0096c7; /* Blue */
-      margin: 0.3em 0 1em 0;
-    }
+      h2 {
+        font-size: 2em;
+        color: #0096c7; /* Blue */
+        margin: 0.3em 0 1em 0;
+      }
 
-    .birthday-gallery {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 40px;
-      flex-wrap: wrap;
-    }
+      .birthday-gallery {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 40px;
+        flex-wrap: wrap;
+      }
 
-    .birthday-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+      .birthday-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
-    .birthday-img {
-      height: 260px;
-      width: 200px;
-      object-fit: cover;
-      border-radius: 20px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-      animation: float 3s ease-in-out infinite;
-    }
+      .birthday-img {
+        height: 260px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        animation: float 3s ease-in-out infinite;
+      }
 
-    .birthday-label {
-      font-size: 1.3em;
-      color: #023e8a; /* Navy */
-      margin-top: 10px;
-      font-weight: bold;
-      font-family: 'Pacifico', cursive;
-    }
+      .birthday-label {
+        font-size: 1.3em;
+        color: #023e8a; /* Navy */
+        margin-top: 10px;
+        font-weight: bold;
+        font-family: "Pacifico", cursive;
+      }
 
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-8px); }
-    }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-8px);
+        }
+      }
 
-    h3 {
-      margin-top: 2em;
-      font-size: 1.6em;
-      color: #023e8a;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
+      h3 {
+        margin-top: 2em;
+        font-size: 1.6em;
+        color: #023e8a;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
 
-    ul {
-      list-style: none;
-      padding: 0;
-    }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
 
-    ul li {
-      font-size: 1.3em;
-      margin: 10px auto;
-      padding: 12px 24px;
-      background: rgba(255, 255, 255, 0.85);
-      border-radius: 15px;
-      display: inline-block;
-      margin-bottom: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
+      ul li {
+        font-size: 1.3em;
+        margin: 10px auto;
+        padding: 12px 24px;
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 15px;
+        display: inline-block;
+        margin-bottom: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
 
-    a {
-      display: inline-block;
-      margin-top: 20px;
-      text-decoration: none;
-      background-color: #00b4d8;
-      color: white;
-      padding: 14px 30px;
-      border-radius: 50px;
-      font-size: 1.2em;
-      font-weight: bold;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      transition: transform 0.2s, background-color 0.3s;
-    }
+      a {
+        display: inline-block;
+        margin-top: 20px;
+        text-decoration: none;
+        background-color: #00b4d8;
+        color: white;
+        padding: 14px 30px;
+        border-radius: 50px;
+        font-size: 1.2em;
+        font-weight: bold;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        transition:
+          transform 0.2s,
+          background-color 0.3s;
+      }
 
-    a:hover {
-      background-color: #0077b6;
-      transform: scale(1.05);
-    }
+      a:hover {
+        background-color: #0077b6;
+        transform: scale(1.05);
+      }
 
-    .wishlist {
-      background-color: #e0f7ff;
-      border: 2px dashed #00b4d8;
-      padding: 15px 25px;
-      border-radius: 15px;
-      margin: 30px auto;
-      width: fit-content;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
+      .wishlist {
+        background-color: #e0f7ff;
+        border: 2px dashed #00b4d8;
+        padding: 15px 25px;
+        border-radius: 15px;
+        margin: 30px auto;
+        width: fit-content;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
 
-    .wishlist a {
-      background-color: #00b4d8;
-      padding: 10px 20px;
-      color: white;
-      text-decoration: none;
-      border-radius: 30px;
-      font-size: 1.1em;
-      margin-top: 10px;
-      display: inline-block;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
+      .wishlist a {
+        background-color: #00b4d8;
+        padding: 10px 20px;
+        color: white;
+        text-decoration: none;
+        border-radius: 30px;
+        font-size: 1.1em;
+        margin-top: 10px;
+        display: inline-block;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
 
-    .confetti {
-      position: absolute;
-      width: 10px;
-      height: 10px;
-      background: rgba(173, 216, 230, 0.8); /* light blue confetti */
-      border-radius: 50%;
-      animation: confetti-fall 4s linear infinite;
-    }
+      .confetti {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: rgba(173, 216, 230, 0.8); /* light blue confetti */
+        border-radius: 50%;
+        animation: confetti-fall 4s linear infinite;
+      }
 
-    @keyframes confetti-fall {
-      0% { transform: translateY(-10px) rotate(0deg); }
-      100% { transform: translateY(100vh) rotate(360deg); }
-    }
-  </style>
-</head>
-<body>
-  <h1>🎉 It's My Birthday! 🎉</h1>
-  <h2>I'm Turning 2 on July 6th!</h2>
+      @keyframes confetti-fall {
+        0% {
+          transform: translateY(-10px) rotate(0deg);
+        }
+        100% {
+          transform: translateY(100vh) rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🎉 It's My Birthday! 🎉</h1>
+    <h2>I'm Turning 3 on Jun 27th!</h2>
 
-  <div class="birthday-gallery">
-    <div class="birthday-item">
-      <img src="./First.jpg" alt="First Birthday" class="birthday-img">
-      <p class="birthday-label">🎉 First Birthday</p>
+    <div class="birthday-gallery">
+      <div class="birthday-item">
+        <img src="./First.jpg" alt="First Birthday" class="birthday-img" />
+        <p class="birthday-label">🎉 First Birthday</p>
+      </div>
+      <div class="birthday-item">
+        <img src="./Second.jpg" alt="Second Birthday" class="birthday-img" />
+        <p class="birthday-label">🎈 Second Birthday</p>
+      </div>
     </div>
-    <div class="birthday-item">
-      <img  class="birthday-img">
-      <p class="birthday-label">🎈 Second Birthday</p>
+
+    <h3>What to bring:</h3>
+    <ul>
+      <li>🚀 Energy to chase me around the room!</li>
+      <li>🍰 Cake (because sharing is optional...)</li>
+      <li>🕶️ Sunglasses, because my smile is that bright</li>
+    </ul>
+
+    <div class="wishlist">
+      <h3>🎁 Birthday Wish List 🎁</h3>
+      <p>
+        Want to surprise me with something fun? Check out my wishlist below!
+      </p>
+      <a
+        href="https://www.amazon.com/hz/wishlist/ls/104CCQZPQGV8D?ref_=wl_share"
+        target="_blank"
+        >View My Wishlist</a
+      >
     </div>
-  </div>
 
-  <h3>What to bring:</h3>
-  <ul>
-    <li>🚀 Energy to chase me around the room!</li>
-    <li>🍰 Cake (because sharing is optional...)</li>
-    <li>🕶️ Sunglasses, because my smile is that bright</li>
-  </ul>
+    <h3>Join the party here:</h3>
+    <a
+      href="https://www.google.com/maps/place/Ladera+Apartments/@47.4670166,-122.2775144,4897m/data=!3m1!1e3!4m6!3m5!1s0x54904329890ffa03:0xb96ed01d40344b13!8m2!3d47.4663909!4d-122.2605129!16s%2Fg%2F1tg7rqlm?entry=ttu&g_ep=EgoyMDI2MDYyMy4wIKXMDSoASAFQAw%3D%3D"
+      target="_blank"
+      >📍 Find Us on Google Maps</a
+    >
 
-  <div class="wishlist">
-    <h3>🎁 Birthday Wish List 🎁</h3>
-    <p>Want to surprise me with something fun? Check out my wishlist below!</p>
-    <a href="https://www.amazon.com/hz/wishlist/ls/104CCQZPQGV8D?ref_=wl_share" target="_blank">View My Wishlist</a>
-  </div>
-
-  <h3>Join the party here:</h3>
-  <a href="https://www.google.com/maps/place/10102+8th+Ave+S,+Seattle,+WA+98168/@47.513043,-122.3232728,3a,75y,109.14h,87.29t/data=!3m7!1e1!3m5!1spkW-Kp84d1vVdiBFxuPEYw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D2.7071588386350385%26panoid%3DpkW-Kp84d1vVdiBFxuPEYw%26yaw%3D109.14432962375835!7i16384!8i8192!4m18!1m11!4m10!1m4!2m2!1d-122.3228463!2d47.513359!4e1!1m3!2m2!1d-122.3227013!2d47.5127585!3e0!3m5!1s0x549043cb87feafa7:0x6535b391737d4f4!8m2!3d47.512888!4d-122.3226901!16s%2Fg%2F11c0zr4jc2?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">📍 Find Us on Google Maps</a>
-
-  <script>
-    for (let i = 0; i < 30; i++) {
-      const confetti = document.createElement('div');
-      confetti.className = 'confetti';
-      confetti.style.left = Math.random() * 100 + 'vw';
-      confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 70%, 85%)`;
-      confetti.style.width = confetti.style.height = Math.random() * 8 + 5 + 'px';
-      confetti.style.animationDuration = (Math.random() * 3 + 2) + 's';
-      document.body.appendChild(confetti);
-    }
-  </script>
-</body>
+    <script>
+      for (let i = 0; i < 30; i++) {
+        const confetti = document.createElement("div");
+        confetti.className = "confetti";
+        confetti.style.left = Math.random() * 100 + "vw";
+        confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 70%, 85%)`;
+        confetti.style.width = confetti.style.height =
+          Math.random() * 8 + 5 + "px";
+        confetti.style.animationDuration = Math.random() * 3 + 2 + "s";
+        document.body.appendChild(confetti);
+      }
+    </script>
+  </body>
 </html>
